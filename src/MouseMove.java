@@ -18,9 +18,6 @@ public class MouseMove {
             }
             robot.mouseMove(random.nextInt(MAX_X), random.nextInt(MAX_Y));
             Thread.sleep(FIVE_SECONDS);
-            if (point.getLocation().equals(MouseInfo.getPointerInfo().getLocation())) {
-                break;
-            }
         }
     }
 }
